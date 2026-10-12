@@ -1,0 +1,291 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#222;
+    line-height:1.6;
+    background:#fff;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    z-index:1000;
+    border-bottom:1px solid #eee;
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.nav{
+    display:flex;
+    gap:30px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav a:hover{
+    color:#009688;
+}
+
+.donate-btn{
+    text-decoration:none;
+    background:#111;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* LOGO */
+.logo img{
+    height:60px;
+    width:auto;
+    display:block;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url('hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.hero-content{
+    width:90%;
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons a{
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.hero-buttons a:first-child{
+    background:white;
+    color:black;
+}
+
+.hero-buttons a:last-child{
+    border:2px solid white;
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+/* ABOUT */
+
+.about{
+    background:#fafafa;
+    text-align:center;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* ECOSYSTEM */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+/* IMPACT */
+
+.impact{
+    background:#111;
+    color:white;
+}
+
+.impact h2{
+    color:white;
+}
+
+/*GRID LAYOUT FOR IMPACT CARDS*/
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat-card{
+    min-height:470px;
+    padding:60px 35px;
+    text-align:center;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.stat-card h2{
+    font-size:5rem;
+    font-weight:800;
+    line-height:1;
+    margin-bottom:15px;
+}
+
+.stat-card h3{
+    font-size:1.8rem;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.stat-card p{
+    font-size:1.2rem;
+    line-height:1.7;
+    max-width:320px;
+}
+
+.red{
+    background:#ee0028;
+}
+
+.yellow{
+    background:#ffb300;
+}
+
+.orange{
+    background:#ff6900;
+}
+
+.green{
+    background:#00b548;
+}
+
+.blue{
+    background:#04548a;
+}
+
+.grey{
+    background:#8e8e8e;
+}
+
+@media(max-width:1000px){
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-card h2{
+        font-size:4rem;
+    }
+}
