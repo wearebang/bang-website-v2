@@ -5,156 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANG Youth Leadership</title>
     <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet"> 
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-    section {
-        scroll-margin-top: 80px;
-    }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- HEADER -->
+    <a class="skip" href="#main">Skip to content</a>
     <header class="header">
         <div class="container">
-
-            <div class="logo">
-                <a href="#home">
-                    <img src="bang logo.png" alt="BANG Logo">
-                </a>
-            </div>
-
-            <nav class="nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#ecosystem">Ecosystem</a>
-                <a href="#impact">Impact</a>
-                <a href="#contact">Contact</a>
+            <a class="logo" href="index.html"><img src="bang-logo.png" alt="BANG home"></a>
+            <nav class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="about.html" class="dropdown-toggle">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html#about-us">About Us</a>
+                        <a href="about.html#our-story">Our Story</a>
+                        <a href="about.html#where-we-are-going">Where We Are Going</a>
+                        <a href="about.html#how-change-happens">How Change Happens</a>
+                        <a href="about.html#impact-reports">Impact &amp; Reports</a>
+                    </div>
+                </div>
+                <a href="edutainment.html">Edutainment</a>
+                <a href="stacks.html">STACKS</a>
+                <a href="homes.html">Homes</a>
+                <a href="worldwide.html">Worldwide</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
             </nav>
-
-            <a href="#" class="donate-btn">
-                Donate
-            </a>
-
+            <a href="donate.html" class="btn btn-dark">Donate</a>
         </div>
     </header>
 
-    <!-- HERO -->
+    <main id="main">
+
     <section class="hero" id="home">
-
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
-
-            <h1>
-                When Young People Lead,
-                Communities Grow Stronger
-            </h1>
-
-            <p>
-                Creating opportunities through leadership,
-                enterprise, education and community action.
-            </p>
-
-            <div class="hero-buttons">
-                #about
-                    Learn More
-                </a>
-
-                #contact
-                    Get Involved
-                </a>
+            <h1>When young people lead, communities grow stronger</h1>
+            <p>Leadership, enterprise and opportunity, rooted in Brent.</p>
+            <div class="btn-row">
+                <a href="#pathways" class="btn btn-yellow">Find your way in</a>
+                <a href="donate.html" class="btn btn-outline">Support BANG</a>
             </div>
-
         </div>
-
     </section>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-
+    <section class="pathways" id="pathways">
         <div class="container">
-
-            <h2>About Us</h2>
-
-            <p>
-               BANG is a values-led ecosystem connecting youth leadership, enterprise, research, organisational development and housing. Rooted in Brent and connected across London and beyond, we create practical routes for young people to lead, build skills, shape decisions and access opportunities.
-            </p>
-
+            <h2>Which way in?</h2>
+            <div class="path-grid">
+            <article class="path red"><h3>I’m a young person</h3><p>Build your leadership, experience, ideas and networks.</p><a href="contact.html#young-people" class="btn btn-dark">Find an opportunity</a></article>
+            <article class="path yellow"><h3>I’m a school or college</h3><p>Programmes and placements built around your students.</p><a href="contact.html#schools" class="btn btn-dark">Work with BANG</a></article>
+            <article class="path green"><h3>I’m an employer</h3><p>Open your networks and create routes into work.</p><a href="contact.html#employers" class="btn btn-dark">Partner with BANG</a></article>
+            <article class="path blue"><h3>I’m a funder</h3><p>Back inclusive, evidence-led youth development.</p><a href="contact.html#funders" class="btn btn-dark">Discuss commissioning</a></article>
+            </div>
         </div>
-
     </section>
 
-    <!-- ECOSYSTEM -->
     <section class="ecosystem" id="ecosystem">
-
         <div class="container">
-
-            <h2>The Ecosystem</h2>
-
+            <h2>The BANG ecosystem</h2>
+            <p class="lead">Four connected organisations, one shared goal.</p>
             <div class="cards">
-
-                <div class="card">
-                    <h3>Leadership</h3>
-                    <p>
-                        Practical leadership opportunities for
-                        young people.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Enterprise</h3>
-                    <p>
-                        Business and entrepreneurship training.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Housing</h3>
-                    <p>
-                        Safe accommodation and support services.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Partnerships</h3>
-                    <p>
-                        Working together with schools,
-                        communities and employers.
-                    </p>
-                </div>
-
+            <article class="card"><h3>Edutainment</h3><p>Our Brent charity: leadership, learning and community action.</p><a href="edutainment.html" class="btn btn-outline-dark">Explore Edutainment</a></article>
+            <article class="card"><h3>STACKS</h3><p>Enterprise skills and money confidence through practical learning.</p><a href="stacks.html" class="btn btn-outline-dark">Explore STACKS</a></article>
+            <article class="card"><h3>Homes</h3><p>Safe, stable homes linked to learning, work and enterprise.</p><a href="homes.html" class="btn btn-outline-dark">Explore Homes</a></article>
+            <article class="card"><h3>Worldwide</h3><p>Consultancy that shares BANG’s model with partners.</p><a href="worldwide.html" class="btn btn-outline-dark">Explore Worldwide</a></article>
             </div>
-
         </div>
-
     </section>
 
-    <!-- IMPACT -->
-   <div class="stat-card red">
-    <h2 class="counter" data-target="27">99</h2>
-    <h3>YEARS</h3>
-    <p>Building leadership with young people and communities since 1999.</p>
-</div>
+    <section class="impact" id="impact">
+        <div class="container">
+            <h2>Our reach and impact</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat red"><div class="num counter" data-target="27">0</div><h3>years</h3><p>Building leadership with young people since 1999.</p></div>
+            <div class="stat yellow"><div class="num counter" data-target="1000">0</div><h3>+ youth voices</h3><p>Shaped BANG’s largest youth-led research across 20+ Brent postcode areas.</p></div>
+            <div class="stat orange"><div class="num counter" data-target="855">0</div><h3>creative therapy sessions</h3><p>Delivered through Create Change, reaching 70 young people.</p></div>
+            <div class="stat green"><div class="num counter" data-target="97">0</div><h3>% more self-confidence</h3><p>Reported through Create Change in 2023–24.</p></div>
+            <div class="stat blue"><div class="num counter" data-target="316">0</div><h3>young people</h3><p>Reached through six STACKS cohorts in 2025–26.</p></div>
+            <div class="stat red"><div class="num counter" data-target="86">0</div><h3>% enterprise confidence</h3><p>Founders Lab students ready to start a business, up from 58%.</p></div>
+            <div class="stat yellow"><div class="num counter" data-target="106">0</div><h3>children with SEND</h3><p>Reached through Dela Move &amp; Drumming at Manor School.</p></div>
+            <div class="stat orange"><div class="num counter" data-target="4">0</div><h3>leadership pathways</h3><p>Into leadership, work experience, internships and T-Levels.</p></div>
+        </div>
+        <div class="container center">
+            <a href="about.html#impact-reports" class="btn btn-yellow">See impact &amp; reports</a>
+        </div>
+    </section>
 
-<div class="stat-card yellow">
-    <h2 class="counter" data-target="1000">100</h2>
-    <h3>+ YOUTH VOICES</h3>
-    <p>Contributed to BANG's largest youth-led research exercise.</p>
-</div>
+    <section class="voices" id="voices">
+        <div class="container">
+            <h2>In their words</h2>
+            <!-- Replace each quote with a real young person's words (and their photo if they agree) -->
+            <div class="quote-grid">
+            <figure class="quote"><blockquote>“Add a quote from a young person here.”</blockquote><figcaption>Name, programme</figcaption></figure>
+            <figure class="quote"><blockquote>“Add a quote from a young person here.”</blockquote><figcaption>Name, programme</figcaption></figure>
+            <figure class="quote"><blockquote>“Add a quote from a young person here.”</blockquote><figcaption>Name, programme</figcaption></figure>
+            </div>
+        </div>
+    </section>
 
-<div class="stat-card orange">
-    <h2 class="counter" data-target="855">28</h2>
-    <h3>CREATIVE THERAPY SESSIONS</h3>
-    <p>Delivered through Create Change.</p>
-</div>
+    <section class="news" id="news">
+        <div class="container">
+            <h2>Latest news</h2>
+            <div class="cards">
+                <article class="card news-card">
+                    <img src="https://wearebang.com/wp-content/uploads/2026/09/pia-539x303.jpg" alt="Guests at the PIA and BANG fundraiser" loading="lazy">
+                    <h3>PIA Fundraiser</h3>
+                    <p>Partners and supporters came together for BANG’s Leadership &amp; Enterprise Programmes.</p>
+                    <a href="https://wearebang.com/pia-fundraiser/" class="btn btn-outline-dark">Read more</a>
+                </article>
+                <article class="card news-card">
+                    <img src="https://wearebang.com/wp-content/uploads/2026/09/fundraiser2-539x303.jpg" alt="BANG Young Leaders planning The Great Giveaway" loading="lazy">
+                    <h3>The Great Giveaway</h3>
+                    <p>Young Leaders plan and deliver a community giveaway with Berkeley Group.</p>
+                    <a href="https://wearebang.com/the-great-giveaway/" class="btn btn-outline-dark">Read more</a>
+                </article>
+            </div>
+            <div class="center"><a href="news.html" class="btn btn-dark">All news</a></div>
+        </div>
+    </section>
 
-<div class="stat-card green">
-    <h2 class="counter" data-target="97">80</h2>
-    <h3>% INCREASED SELF-CONFIDENCE</h3>
-    <p>Young people reporting increased confidence.</p>
-</div>
+    <section class="cta-band">
+        <div class="container">
+            <h2>Ready to get involved?</h2>
+            <p>Join a programme, partner with us or back the next generation of leaders.</p>
+            <div class="btn-row">
+                <a href="contact.html" class="btn btn-light">Get in touch</a>
+                <a href="donate.html" class="btn btn-outline">Donate</a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <h3>Contact</h3>
+                <p><strong>BANG Edutainment</strong><br>2nd Floor, 89–93 High St, Harlesden, London NW10 4NX<br>0208 963 9560<br>Charity No. 1086541</p>
+                <a href="contact.html" class="btn btn-yellow">Email us</a>
+            </div>
+            <div>
+                <h3>Follow BANG</h3>
+                <p class="social">
+                    <a href="https://www.instagram.com/bangcharity">Instagram</a>
+                    <a href="https://www.youtube.com/@bangcharity">YouTube</a>
+                    <a href="https://www.linkedin.com/company/wearebang/">LinkedIn</a>
+                    <a href="https://www.facebook.com/BANGCharity">Facebook</a>
+                </p>
+            </div>
+            <div>
+                <h3>Useful links</h3>
+                <p class="social">
+                    <a href="http://eepurl.com/hIY-mD">Newsletter signup</a>
+                    <a href="https://wearebang.com/impactreports/">Annual report</a>
+                    <a href="https://wearebang.com/terms-and-conditions/">Terms &amp; conditions</a>
+                </p>
+            </div>
+        </div>
+        <p class="copy">© BANG Edutainment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
